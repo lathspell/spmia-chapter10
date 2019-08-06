@@ -24,6 +24,13 @@ public class OrganizationServiceController {
     private OrganizationService orgService;
     private static final Logger logger = LoggerFactory.getLogger(OrganizationServiceController.class);
 
+    @RequestMapping(value="/",method = RequestMethod.GET)
+    public Iterable<Organization> getOrganizations() {
+        logger.debug("Looking up data for all orgs");
+
+        return orgService.getOrgs();
+    }
+
     @RequestMapping(value="/{organizationId}",method = RequestMethod.GET)
     public Organization getOrganization( @PathVariable("organizationId") String organizationId) {
         logger.debug("Looking up data for org {}", organizationId);

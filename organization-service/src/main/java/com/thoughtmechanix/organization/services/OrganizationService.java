@@ -16,6 +16,10 @@ public class OrganizationService {
     @Autowired
     SimpleSourceBean simpleSourceBean;
 
+    public Iterable<Organization> getOrgs() {
+        return orgRepository.findAll();
+    }
+
     public Organization getOrg(String organizationId) {
         return orgRepository.findById(organizationId);
     }
