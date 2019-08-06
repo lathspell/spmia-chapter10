@@ -28,5 +28,5 @@ eureka:
 logging:
   level:
     com.netflix: WARN
-    org.springframework.web: WARN
+    org.springframework.web: INFO
     com.thoughtmechanix: DEBUG
