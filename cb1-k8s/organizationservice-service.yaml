@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: organizationservice
+  labels:
+    project: spmia
+    app: organizationservice
+spec:
+  selector:
+    project: spmia
+    app: organizationservice
+  type: NodePort
+  ports:
+    - port: 8085
+      targetPort: 8085

@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/bin/bash -ue
 
-cd cb1-k8s
-kubectl apply -f database-deployment.yml
-kubectl apply -f database-service.yml
+for i in cb1-k8s/*.yaml; do
+  echo "# $i"
+  kubectl apply -f $i
+done
