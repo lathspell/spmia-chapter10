@@ -17,6 +17,7 @@ spec:
       containers:
         - name: organizationservice
           image: johncarnell/tmx-organization-service:cb1
+          imagePullPolicy: Never
           env:
             - name: AUTHSERVER_URI
               value: http://authenticationservice:8901/user
@@ -36,6 +37,4 @@ spec:
               value: kafkaserver
           ports:
             - containerPort: 8085
-          resources:
-            limits:
-              memory: "1073741824"
+

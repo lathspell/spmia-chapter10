@@ -25,7 +25,3 @@ spec:
               value: http://eurekaserver:8761/eureka/
           ports:
             - containerPort: 8888
-          resources:
-            limits:
-              memory: 1e9
-

@@ -31,6 +31,8 @@ spec:
               value: "8901"
           ports:
             - containerPort: 8901
-          resources:
-            limits:
-              memory: "1073741824"
+#          resources:
+#            requests:
+#              memory: 400Mi
+#            limits:
+#              memory: 1Gi

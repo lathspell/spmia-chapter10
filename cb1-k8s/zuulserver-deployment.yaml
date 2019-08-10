@@ -29,6 +29,4 @@ spec:
               value: "5555"
           ports:
             - containerPort: 5555
-          resources:
-            limits:
-              memory: "1073741824"
+

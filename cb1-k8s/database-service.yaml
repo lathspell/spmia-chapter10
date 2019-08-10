@@ -17,6 +17,6 @@ spec:
       # The port accessible by other services inside the cluster
       port: 5432
       # The port accessible at $(minikube ip) for types NodePort and Loadbalancer; must be in the range of 30000-32767
-      nodePort: 30000
+      nodePort: 30002
       protocol: TCP
 

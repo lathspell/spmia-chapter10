@@ -17,7 +17,7 @@ spec:
       containers:
         - name: database
           image: postgres:10
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
           env:
             - name: POSTGRES_USER
               value: postgres_dev
